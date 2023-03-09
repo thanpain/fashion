@@ -1,0 +1,93 @@
+.container-contact {
+    padding: 10rem 5%;
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    gap: 1.5rem;
+}
+.container-contact .contact-form .form {
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    padding: 3.5rem;
+    border-radius: 5px;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.container-contact .infomation .des-contact {
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    padding: 2.5rem;
+    border-radius: 5px;
+    margin-top: 5rem;
+}
+.container-contact .infomation h1 {
+    font-size: 3rem;
+}
+.container-contact .contact-form h1 {
+    font-size: 3rem;
+}
+.container-contact .contact-form .form .text-email {
+    width: 100%;
+}
+.container-contact .contact-form .form .text-email .email, 
+.container-contact .contact-form .form .text-email .name {
+    width: 100%;
+    background: #dddd;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+.container-contact .contact-form .form .subject input {
+    width: 100%;
+    background: #dddd;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+.container-contact .contact-form .form .send-mess button {
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 999px;
+    border: .3rem solid #ffff00;
+    background: #000;
+    color: #fff;
+}
+.container-contact .contact-form .form .send-mess button:hover {
+    background: #ffff00;
+    color: #000;
+    transition: all .3s;
+}
+.container-contact .infomation .des-contact {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+.container-contact .infomation .des-contact p {
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    border-bottom: .1rem solid #ffffff7c;
+}
+.container-contact .infomation .des-contact .address i {
+    margin: 1.5rem 1.7rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.container-contact .infomation .des-contact .email i,
+.container-contact .infomation .des-contact .phone i {
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+.container-contact .infomation .des-contact .form-address {
+    border-bottom: .1rem solid #ffffffa9;
+}
+textarea {
+    resize: vertical;
+    width: 100%;
+    background: #dddd;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+    .container-contact {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

@@ -1,0 +1,206 @@
+.container-blog {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+.container .posts-container .post {
+    width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    border: .1rem  solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+.container .posts-container .post .image {
+    height: 50rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.container .posts-container .post .date {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: #000;
+}
+.container .posts-container .post .title {
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color: #000;
+}
+.container .posts-container .post .title:hover {
+    color: #ff0000;
+    transition: all .3s;
+}
+.container .posts-container .post .text {
+    color: #000;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+.container .posts-container .link {
+    border-top: .1rem  solid rgba(0,0,0,.2);
+    margin-top: .5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.container .posts-container .link .user {
+    margin-right: auto;
+}
+.container .posts-container .link .icon {
+    padding-right: 1rem;
+}
+.container .posts-container .link a {
+    font-size: 1.5rem;
+    color: #000;
+}
+.container .posts-container .link a i {
+    padding-right: .2rem;
+    color: #000;
+}
+.container .posts-container .link a:hover {
+    color: #ff0000;
+    transition: all .3s;
+}
+.container .posts-container .link a:hover i {
+    color: #ff0000;
+    transition: all .3s;
+}
+.container .sidebar .box {
+    border: .1rem  solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+}
+.container .sidebar .box .title {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: #000;
+    text-transform: capitalize;
+}
+.container .sidebar .box .about {
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+.container .sidebar .box .about img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 0;
+}
+.container .sidebar .box .about h3 {
+    color: #000;
+    font-size: 2rem;
+}
+.container .sidebar .box .about p {
+    color: #777;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+.container .sidebar .box .about .follow {
+    padding: 1rem 0;
+}
+.container .sidebar .box .about .follow a {
+    height: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.7rem;
+    margin: 0 .1rem;
+}
+.container .sidebar .box .about .follow a:hover {
+    background-color: #ff0000;
+    transition: all .3s;
+}
+.container .sidebar .box .category {
+    padding: 1rem 1.5rem;
+}
+.container .sidebar .box .category a {
+    padding: .4rem 0;
+    font-size: 1.5rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.container .sidebar .box .category a span {
+    background-color: #000;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+.container .sidebar .box .category a:hover {
+    color: #ff0000;
+    transition: all .3s;
+}
+.container .sidebar .box .category a:hover span{
+    background-color: #ff0000;
+    transition: all .3s;
+}
+.container .sidebar .box .p-post {
+    padding: 1rem 1rem;
+}
+.container .sidebar .box .p-post .post-d-flex {
+    display: flex;
+}
+.container .sidebar .box .p-post a{
+    padding: 1rem 0;
+    display: block;
+}
+.container .sidebar .box .p-post a h3 {
+    color: #000;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.container .sidebar .box .p-post .post-d-flex h3, span {
+    margin-left: 1rem;
+}
+.container .sidebar .box .p-post a span {
+    color: #000;
+    font-size: 1.5rem;
+}
+.container .sidebar .box .p-post a span i {
+    padding-right: .2rem;
+}
+.container .sidebar .box .p-post a:hover h3 {
+    color: #ff0000;
+    transition: all .3s;
+}
+.container .sidebar .box .tags {
+    padding: 1rem;
+}
+.container .sidebar .box .tags a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: #000;
+    border-radius: .5rem;
+    border: .1rem  solid rgba(0,0,0,.2);
+    margin: .5rem;
+}
+.container .sidebar .box .tags a:hover {
+    background: #000;
+    color: #fff;
+    transition: all .3s;
+}
+
+@media (max-width: 768px) {
+    .container-blog {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}

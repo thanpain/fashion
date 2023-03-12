@@ -373,6 +373,67 @@ header .search-form label:hover {
     align-items: center;
     padding: 4rem 0;
 }
+/* --------- login --------- */
+header .dn {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 90%;
+    height: auto;
+    padding: 15rem 7%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: #000;
+    visibility: hidden;
+}
+header .dn.active {
+    visibility: visible;
+}
+header .dn .form-dn {
+    position: relative;
+}
+header .dn .form-dn h2 {
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+header .dn .form-dn label {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 1rem;
+}
+header .dn .form-dn .login, .password {
+    width: 25rem;
+    padding: 1rem 1rem;
+    border-radius: 999px;
+    margin: 1.5rem 0;
+}
+header .dn .form-dn .btn-dangnhap {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    margin: 3rem 1rem;
+    border-radius: 999px;
+    background-color: #fff;
+}
+header .dn .form-dn .btn-dangnhap:hover {
+    background-color: #ffff00;
+    color: #000;
+    transition: .3s;
+}
+header .dn .close {
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    cursor: pointer;
+}
+header .dn .close:hover {
+    color: #ff0000;
+}
 /* --------- top ---------- */
 #top-up {
     font-size: 4rem;

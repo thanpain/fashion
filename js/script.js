@@ -1,3 +1,13 @@
+function preloader() {
+	$('#preloader').delay(0).fadeOut();
+};
+$(window).on('load', function () {
+	preloader();
+	mainSlider();
+	aosAnimation();
+	wowAnimation();
+});
+
 var menu = document.querySelector('#menu-bars');
 var navbar = document.querySelector('.navbar');
 

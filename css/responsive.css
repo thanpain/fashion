@@ -58,7 +58,7 @@
     #menu-bars {
         display: inline-block;
     }
-    #cars, #user {
+    #cars {
         display: none;
     }
     header .search-form {

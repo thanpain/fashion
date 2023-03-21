@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/news.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
@@ -90,14 +94,26 @@
     <main>
         <!-- banner -->
         <section class="banner-bg">
-            <div class="banner-img">
-                <img src="./img/banner/banner_bg01.jpg" alt="" width="100%" height="auto">
-            </div>
-            <div class="heading">
-                <h1>SHOP FASHION</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <button>BOOK NOW</button>
-            </div>
+            <!-- banner -->
+            <section class="banner-bg">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./img/banner/1.png" alt="" width="100%"></div>
+                        <div class="swiper-slide"><img src="./img/banner/2.png" alt="" width="100%"></div>
+                        <div class="swiper-slide"><img src="./img/banner/3.png" alt="" width="100%"></div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+            <!-- end banner -->
         </section>
         <!-- end banner -->
 
@@ -105,44 +121,44 @@
         <section class="container">
             <div class="container-bg">
                 <div class="news-container" align="center">
-                    <div class="news-one">
+                    <div class="news-one" data-aos="fade-up">
                         <div class="img">
-                            <img src="./img/product/h7.png" alt="">
+                            <img class="img-news" src="https://ss-ava.saostar.vn/wwebp1000/pc/1679308019644/saostar-vwbubd5emcbdxuko.jpg" alt="">
                         </div>
                         <div class="news-body">
-                            <a href="#"><h1>Man must explore, and this is exploration at its greatest</h1></a>
-                            <p class="new-title">Problems look mighty small from 150 miles up.</p>
-                            <p class="post">Posted by Start Bootstrap on January 31, 2020 · 4 mins read</p>
+                            <a href="#"><h1>Bé Quyên căng tràn sức sống với váy dạ hội lấp lánh: Không thi Miss Grand hơi phí</h1></a>
+                            <p class="new-title">Top 10 Hoa hậu Việt Nam 2022.</p>
+                            <p class="post">Posted by admin on January 21, 2022 · 4 mins read</p>
                         </div>
                     </div>
-                    <div class="news-one">
+                    <div class="news-one" data-aos="fade-up">
                         <div class="img">
-                            <img src="./img/product/h7.png" alt="">
+                            <img src="https://ss-images.saostar.vn/wpr700/pc/1679304439122/saostar-jkie96odme4sewj0.png" alt="">
                         </div>
                         <div class="news-body">
-                            <a href="#"><h1>Man must explore, and this is exploration at its greatest</h1></a>
-                            <p class="new-title">Problems look mighty small from 150 miles up.</p>
-                            <p class="post">Posted by Start Bootstrap on January 31, 2020 · 4 mins read</p>
+                            <a href="#"><h1>GIGI Xuân-Hè 2023: Cuộc dạo chơi đầy sắc màu của chuyến đi đến những vùng đất mới</h1></a>
+                            <p class="new-title">hong cách mới mẻ cho những chuyến du ngoạn mùa hè..</p>
+                            <p class="post">Posted by admin on January 31, 2022 · 4 mins read</p>
                         </div>
                     </div>
-                    <div class="news-one">
+                    <div class="news-one" data-aos="fade-up">
                         <div class="img">
-                            <img src="./img/product/h7.png" alt="">
+                            <img src="https://ss-images.saostar.vn/wwebp700/pc/1679304272971/saostar-09nykr606t826108.jpg" alt="">
                         </div>
                         <div class="news-body">
-                            <a href="#"><h1>Man must explore, and this is exploration at its greatest</h1></a>
-                            <p class="new-title">Problems look mighty small from 150 miles up.</p>
-                            <p class="post">Posted by Start Bootstrap on January 31, 2020 · 4 mins read</p>
+                            <a href="#"><h1>Fan loạn nhịp với outfit ngày hè của Thùy Tiên: Biển xanh, cát trắng, nắng vàng còn Tiên thì sao cả nhà?</h1></a>
+                            <p class="new-title">Miss Grand International Nguyễn Thúc Thùy Tiên tạo dáng quyến rũ bên bờ biển..</p>
+                            <p class="post">Posted by admin on January 31, 2020 · 4 mins read</p>
                         </div>
                     </div>
-                    <div class="news-one">
+                    <div class="news-one" data-aos="fade-up">
                         <div class="img">
-                            <img src="./img/product/h7.png" alt="">
+                            <img src="https://ss-images.saostar.vn/wwebp700/pc/1678939319417/saostar-xkb9fq4ocfxzf9nt.png" alt="">
                         </div>
                         <div class="news-body">
-                            <a href="#"><h1>Man must explore, and this is exploration at its greatest</h1></a>
-                            <p class="new-title">Problems look mighty small from 150 miles up.</p>
-                            <p class="post">Posted by Start Bootstrap on January 31, 2020 · 4 mins read</p>
+                            <a href="#"><h1>Hoa hậu H'Hen Niê hoá nàng du mục giữa thảo nguyên hoang dã: 100 điểm thần thái</h1></a>
+                            <p class="new-title">Top 5 Miss Universe - H'Hen Niê khoe nét đẹp hoang dã trong bộ ảnh mới.</p>
+                            <p class="post">Posted by admin on January 31, 2020 · 4 mins read</p>
                         </div>
                     </div>
                 </div>
@@ -151,7 +167,7 @@
         <!-- end news -->
 
         <!-- contact -->
-        <section class="container"> 
+        <section class="container" data-aos="fade-up"> 
             <div class="contact">
                 <div class="contact-des">
                     <p class="contact-sub">đăng ký để nhận thông tin mới nhất về sản phẩm</p>
@@ -170,33 +186,38 @@
         <div class="container">
             <div class="container-flex">
                 <div class="footer-left">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>SHOP FASHION - THỜI TRANG CÔNG SỞ</p></a>
+                    <a href="#"><p>Công Ty TNHH Dich Vụ và Thương mại xxx</p></a>
+                    <a href="#"><p>Số ĐKKD 011111111</p></a>
+                    <a href="#"><p>Sở KHDT Tp Đà Nẵng cấp ngày 04/10/2017</p></a>
+                    <a href="#"><p>Liên hệ với chúng tôi ngay</p></a>
                 </div>
                 <div class="footer-center-1">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>Địa Chỉ: Tầng 10, Toà nhà BẮP</p></a>
+                    <a href="#"><p>Số 02 Quang Trung, Hải Châu, Đà Nẵng</p></a>
+                    <a href="#"><p>Chăm Sóc Khách Hàng: 0222222222</p></a>
+                    <a href="#"><p>Mua Hàng Online: 0222222222</p></a>
+                    <a href="#"><p>Email: fashion@gmail.com</p></a>
                 </div>
                 <div class="footer-center-2">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>Giới Thiệu</p></a>
+                    <a href="#"><p>Liên Hệ</p></a>
+                    <a href="#"><p>Triết Lý Kinh Doanh SHOP FASHION</p></a>
+                    <a href="#"><p>Hệ Thống Cửa Hàng</p></a>
+                    <a href="#"><p>Tin Tức</p></a>
+                    <a href="#"><p>Hàng Khuyến Mãi</p></a>
                 </div>
                 <div class="footer-right">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>Hướng Dẫn Thanh Toán</p></a>
+                    <a href="#"><p>Chính Sách giao nhận - Vận chuyển</p></a>
+                    <a href="#"><p>Tra cứu đơn hàng</p></a>
+                    <a href="#"><p>Quy định đổi hàng</p></a>
+                    <a href="#"><p>Quy định bảo hành và sửa chữa</p></a>
                 </div>
             </div>
             <div class="footer-flex">
-                <p>Copyright © Your Website 2023</p>
-                <p class="power">Power py ...</p>
+                <p>Copyright © Shop Fashion 2023</p>
+                <p class="power">Power by Teams Shop Fashion</p>
                 <div class="footer-rights">
                     <p>Hãy kết nối với chúng tôi</p>
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -212,11 +233,18 @@
     <div title="Về đầu trang" id="top-up">
         <i class="fas fa-arrow-circle-up"></i>
     </div>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
     <script src="./js/script.js"></script>
     <script src="./js/top.js"></script>
     <script src="./js/listpage.js"></script>
-    <script src="./js/listpageNews.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiprer.js"></script>
 </body>
 </html>

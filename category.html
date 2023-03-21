@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/category.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
@@ -90,66 +94,74 @@
     <main>
         <!-- banner -->
         <section class="banner-bg">
-            <div class="banner-img">
-                <img src="./img/banner/banner_bg01.jpg" alt="" width="100%" height="auto">
-            </div>
-            <div class="heading">
-                <h1>SHOP FASHION</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <button>BOOK NOW</button>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/banner/1.png" alt="" width="100%"></div>
+                    <div class="swiper-slide"><img src="./img/banner/2.png" alt="" width="100%"></div>
+                    <div class="swiper-slide"><img src="./img/banner/3.png" alt="" width="100%"></div>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <!-- end banner -->
 
-        <section class="container">
+        <section class="container" data-aos="fade-up">
             <div class="container-category">
-                <h1 style="font-size: 3rem; margin: 1rem 0;">Danh mục sản phẩm</h1>
-                <div class="category">
+                <h1 style="font-size: 3rem; margin: 1rem 0;" data-aos="fade-up">Danh mục sản phẩm</h1>
+                <div class="category" data-aos="fade-up">
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://j-p.vn/vnt_upload/news/12_2021/Shop_thoi_trang_nu_dep_khong_the_bo_lo.jpg" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://j-p.vn/vnt_upload/news/12_2021/Vi_sao_khach_hang_luon_chon_J-P_Fashion.jpg" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://j-p.vn/vnt_upload/news/01_2022/Giay_au_nu_tai_cua_hang_thoi_trang_nu_quan_Tan_Phu_doc_dao_va_chat.jpg" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://nativefashionshop.com/wp-content/uploads/2021/12/DSC_2958-scaled.jpg" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://cf.shopee.ph/file/4fdff9a8df900add967043ae81e5ec80" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://hstatic.net/744/1000088744/1000124945/promotion3_2.jpg?" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://hstatic.net/744/1000088744/1/2016/5-7/img_2.1_0bbb41f4-d71a-46a1-6cfc-5f81fb459515_grande.jpg" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://hstatic.net/744/1000088744/1/2016/5-7/img_5_5f073ac8-5f1e-4baa-4725-30ac8d61235b_grande.jpg" alt="">
                     </div>
                 </div>
-                <h1 style="font-size: 3rem; margin: 1rem 0;">Danh mục sản phẩm 2023</h1>
-                <div class="category">
+                <h1 style="font-size: 3rem; margin: 1rem 0;" data-aos="fade-up">Danh mục sản phẩm 2023</h1>
+                <div class="category" data-aos="fade-up">
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://hstatic.net/744/1000088744/1/2016/5-7/img_3_810d9a6a-f998-4abf-675b-b16f0646c9b1_grande.jpg" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://hstatic.net/744/1000088744/1/2016/5-7/img_8_grande.jpg" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://toplist.vn/images/800px/j-p-fashion-594821.jpg" alt="">
                     </div>
                     <div class="category-img">
-                        <img src="./img/product/h1.jpg" alt="">
+                        <img class="image" src="https://20yearsold.vn/wp-content/uploads/2022/06/nha-kho-liti-553190.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- contact -->
-        <section class="container"> 
+        <section class="container" data-aos="fade-up"> 
             <div class="contact">
                 <div class="contact-des">
                     <p class="contact-sub">đăng ký để nhận thông tin mới nhất về sản phẩm</p>
@@ -168,33 +180,38 @@
         <div class="container">
             <div class="container-flex">
                 <div class="footer-left">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>SHOP FASHION - THỜI TRANG CÔNG SỞ</p></a>
+                    <a href="#"><p>Công Ty TNHH Dich Vụ và Thương mại xxx</p></a>
+                    <a href="#"><p>Số ĐKKD 011111111</p></a>
+                    <a href="#"><p>Sở KHDT Tp Đà Nẵng cấp ngày 04/10/2017</p></a>
+                    <a href="#"><p>Liên hệ với chúng tôi ngay</p></a>
                 </div>
                 <div class="footer-center-1">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>Địa Chỉ: Tầng 10, Toà nhà BẮP</p></a>
+                    <a href="#"><p>Số 02 Quang Trung, Hải Châu, Đà Nẵng</p></a>
+                    <a href="#"><p>Chăm Sóc Khách Hàng: 0222222222</p></a>
+                    <a href="#"><p>Mua Hàng Online: 0222222222</p></a>
+                    <a href="#"><p>Email: fashion@gmail.com</p></a>
                 </div>
                 <div class="footer-center-2">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>Giới Thiệu</p></a>
+                    <a href="#"><p>Liên Hệ</p></a>
+                    <a href="#"><p>Triết Lý Kinh Doanh SHOP FASHION</p></a>
+                    <a href="#"><p>Hệ Thống Cửa Hàng</p></a>
+                    <a href="#"><p>Tin Tức</p></a>
+                    <a href="#"><p>Hàng Khuyến Mãi</p></a>
                 </div>
                 <div class="footer-right">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>Hướng Dẫn Thanh Toán</p></a>
+                    <a href="#"><p>Chính Sách giao nhận - Vận chuyển</p></a>
+                    <a href="#"><p>Tra cứu đơn hàng</p></a>
+                    <a href="#"><p>Quy định đổi hàng</p></a>
+                    <a href="#"><p>Quy định bảo hành và sửa chữa</p></a>
                 </div>
             </div>
             <div class="footer-flex">
-                <p>Copyright © Your Website 2023</p>
-                <p class="power">Power py ...</p>
+                <p>Copyright © Shop Fashion 2023</p>
+                <p class="power">Power by Teams Shop Fashion</p>
                 <div class="footer-rights">
                     <p>Hãy kết nối với chúng tôi</p>
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -209,10 +226,18 @@
     <div title="Về đầu trang" id="top-up">
         <i class="fas fa-arrow-circle-up"></i>
     </div>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
     <script src="./js/script.js"></script>
     <script src="./js/top.js"></script>
     <script src="./js/listpage.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiprer.js"></script>
 </body>
 </html>

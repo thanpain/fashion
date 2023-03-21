@@ -11,6 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
         rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- preloader -->
@@ -43,7 +48,7 @@
             <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
             <i class="fa-solid fa-user" id="user"></i>
-            <i class="fa-solid fa-cart-shopping" id="cars"></i>
+            <i class="fa-solid fa-cart-shopping" id="cars" title="Bạn chưa có sản phẩm nào trong giỏ hàng!"></i>
         </div>
         <!-- search -->
         <form action="" class="search-form">
@@ -89,19 +94,27 @@
     <main>
         <!-- banner -->
         <section class="banner-bg">
-            <div class="banner-img">
-                <img src="./img/banner/banner_bg01.jpg" alt="" width="100%" height="auto">
-            </div>
-            <div class="heading">
-                <h1>SHOP FASHION</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <button>BOOK NOW</button>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./img/banner/1.png" alt="" width="100%"></div>
+                    <div class="swiper-slide"><img src="./img/banner/2.png" alt="" width="100%"></div>
+                    <div class="swiper-slide"><img src="./img/banner/3.png" alt="" width="100%"></div>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <!-- end banner -->
 
         <!-- content -->
-        <section class="container">
+        <section class="container" data-aos="fade-up">
             <div class="container-fluid">
                 <div class="container-left">
                     <h1 class="cartegory">Danh Mục Sản Phẩm</h1>
@@ -112,53 +125,53 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://alomuare.com/vnt_upload/product/deal/thoitrangnu/aokhoac/2024a/d.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p class="title">Lorem ipsum dolor sit amet.</p></a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam.</p>
-                        <span class="price"><b>$</b> 1xxx</span>
+                        <a href="#"><p class="title">Thời trang hot năm 2023.</p></a>
+                        <p class="description">Nàng fashion đa tài nâng tầm phong cách tối giản bằng bộ đôi áo phông...</p>
+                        <span class="price"><b>$</b> 1.000.000</span>
                     </div>
                     <div class="card-footer">
                         <button class="buy"><i class="fa-solid fa-cart-shopping"></i> Mua Hàng</button>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://alomuare.com/vnt_upload/product/deal/thoitrangnu/aokhoac/2024a/d3.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p class="title">Lorem ipsum dolor sit amet.</p></a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam.</p>
-                        <span class="price"><b>$</b> 1xxx</span>
+                        <a href="#"><p class="title">Thời trang hot năm 2023</p></a>
+                        <p class="description">Nàng fashion đa tài năng tầm phong cách tối giàn bằng bộ đôi áo phông...</p>
+                        <span class="price"><b>$</b> 1.000.000</span>
                     </div>
                     <div class="card-footer">
                         <button class="buy"><i class="fa-solid fa-cart-shopping"></i> Mua Hàng</button>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://alomuare.com/vnt_upload/product/deal/thoitrangnu/aokhoac/2024a/d7.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p class="title">Lorem ipsum dolor sit amet.</p></a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam.</p>
-                        <span class="price"><b>$</b> 1xxx</span>
+                        <a href="#"><p class="title">Thời trang hot năm 2023</p></a>
+                        <p class="description">Nàng fashion đa tài năng tầm phong cách tối giàn bằng bộ đôi áo phông...</p>
+                        <span class="price"><b>$</b> 1.000.000</span>
                     </div>
                     <div class="card-footer">
                         <button class="buy"><i class="fa-solid fa-cart-shopping"></i> Mua Hàng</button>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://alomuare.com/vnt_upload/product/deal/thoitrangnu/aokhoac/2024a/d2.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p class="title">Lorem ipsum dolor sit amet.</p></a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam.</p>
-                        <span class="price"><b>$</b> 1xxx</span>
+                        <a href="#"><p class="title">Thời trang hot năm 2023</p></a>
+                        <p class="description">Nàng fashion đa tài năng tầm phong cách tối giàn bằng bộ đôi áo phông...</p>
+                        <span class="price"><b>$</b> 1.000.000</span>
                     </div>
                     <div class="card-footer">
                         <button class="buy"><i class="fa-solid fa-cart-shopping"></i> Mua Hàng</button>
@@ -166,53 +179,53 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://product.hstatic.net/1000368236/product/pl16820-blentino_6a29d6e3696443fdbc21f1355b0ff94b_1024x1024.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p class="title">Lorem ipsum dolor sit amet.</p></a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam.</p>
-                        <span class="price"><b>$</b> 2xxx</span>
+                        <a href="#"><p class="title">Thời trang hot năm 2023</p></a>
+                        <p class="description">Thời trang nam, chất lượng đến từ sản phẩm uy tín nhất hàng đầu việt...</p>
+                        <span class="price"><b>$</b> 1.200.000</span>
                     </div>
                     <div class="card-footer">
                         <button class="buy"><i class="fa-solid fa-cart-shopping"></i> Mua Hàng</button>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://onoff.vn/media/catalog/product/cache/ecd9e5267dd6c36af89d5c309a4716fc/W57TP20401-10.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p class="title">Lorem ipsum dolor sit amet.</p></a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam.</p>
-                        <span class="price"><b>$</b> 2xxx</span>
+                        <a href="#"><p class="title">Thời trang hot năm 2023</p></a>
+                        <p class="description">Thời trang nam, chất lượng đến từ sản phẩm uy tín nhất hàng đầu việt...</p>
+                        <span class="price"><b>$</b> 1.200.000</span>
                     </div>
                     <div class="card-footer">
                         <button class="buy"><i class="fa-solid fa-cart-shopping"></i> Mua Hàng</button>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://onoff.vn/media/catalog/product/cache/ecd9e5267dd6c36af89d5c309a4716fc/S77TP2145011.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p class="title">Lorem ipsum dolor sit amet.</p></a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam.</p>
-                        <span class="price"><b>$</b> 2xxx</span>
+                        <a href="#"><p class="title">Thời trang hot năm 2023</p></a>
+                        <p class="description">Thời trang nam, chất lượng đến từ sản phẩm uy tín nhất hàng đầu việt...</p>
+                        <span class="price"><b>$</b> 1.200.000</span>
                     </div>
                     <div class="card-footer">
                         <button class="buy"><i class="fa-solid fa-cart-shopping"></i> Mua Hàng</button>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://onoff.vn/media/catalog/product/cache/ecd9e5267dd6c36af89d5c309a4716fc/H17TP20152.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p class="title">Lorem ipsum dolor sit amet.</p></a>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam.</p>
-                        <span class="price"><b>$</b> 2xxx</span>
+                        <a href="#"><p class="title">Thời trang hot năm 2023</p></a>
+                        <p class="description">Thời trang nam, chất lượng đến từ sản phẩm uy tín nhất hàng đầu việt...</p>
+                        <span class="price"><b>$</b> 1.200.000</span>
                     </div>
                     <div class="card-footer">
                         <button class="buy"><i class="fa-solid fa-cart-shopping"></i> Mua Hàng</button>
@@ -224,41 +237,41 @@
         <!-- end content -->
 
         <!-- san pham hot -->
-        <section class="container">
+        <section class="container" data-aos="fade-up">
             <div class="container-content-2">
                 <h1 class="sanphamhot">Sản Phẩm Hot</h1>
             </div>
             <div class="row-2">
-                <div class="col-sm-3">
+                <div class="col-sm-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://photo.salekit.com/uploads/salekit_55212856015d5853d669eede2fe3d8d6/ao-kieu-tay-lo-phoi-beo-thoi-trang-quyen.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p>Lorem ipsum dolor sit amet.</p></a>
+                        <a href="#"><p>Áo kiểu tay lỡ phối bèo</p></a>
                     </div>  
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://thoitranglami.com/wp-content/uploads/2021/09/Ao-thun-nu-cong-so.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p>Lorem ipsum dolor sit amet.</p></a>
+                        <a href="#"><p>Áo thun nữ thời trang công sở</p></a>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://360boutique.vn/wp-content/uploads/2019/07/ao-khoac-nam-ca-tinh-mau-den.jpg"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p>Lorem ipsum dolor sit amet.</p></a>
+                        <a href="#"><p>Áo khoác nam cá tính đen</p></a>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3" data-aos="fade-up">
                     <div class="card-img">
-                        <a href="#"><img src="./img/product/h1.jpg"></a>
+                        <a href="#"><img class="image" src="https://cf.shopee.vn/file/40b75ea1f0ef1364d3dcf241825727e6"></a>
                     </div>
                     <div class="card-body">
-                        <a href="#"><p>Lorem ipsum dolor sit amet.</p></a>
+                        <a href="#"><p>Thời trang thể thao nam.</p></a>
                     </div>
                 </div>
             </div>
@@ -266,7 +279,7 @@
         <!-- end san pham hot -->
 
         <!-- contact -->
-        <section class="container"> 
+        <section class="container" data-aos="fade-up"> 
             <div class="contact">
                 <div class="contact-des">
                     <p class="contact-sub">đăng ký để nhận thông tin mới nhất về sản phẩm</p>
@@ -285,33 +298,38 @@
         <div class="container">
             <div class="container-flex">
                 <div class="footer-left">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>SHOP FASHION - THỜI TRANG CÔNG SỞ</p></a>
+                    <a href="#"><p>Công Ty TNHH Dich Vụ và Thương mại xxx</p></a>
+                    <a href="#"><p>Số ĐKKD 011111111</p></a>
+                    <a href="#"><p>Sở KHDT Tp Đà Nẵng cấp ngày 04/10/2017</p></a>
+                    <a href="#"><p>Liên hệ với chúng tôi ngay</p></a>
                 </div>
                 <div class="footer-center-1">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>Địa Chỉ: Tầng 10, Toà nhà BẮP</p></a>
+                    <a href="#"><p>Số 02 Quang Trung, Hải Châu, Đà Nẵng</p></a>
+                    <a href="#"><p>Chăm Sóc Khách Hàng: 0222222222</p></a>
+                    <a href="#"><p>Mua Hàng Online: 0222222222</p></a>
+                    <a href="#"><p>Email: fashion@gmail.com</p></a>
                 </div>
                 <div class="footer-center-2">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>Giới Thiệu</p></a>
+                    <a href="#"><p>Liên Hệ</p></a>
+                    <a href="#"><p>Triết Lý Kinh Doanh SHOP FASHION</p></a>
+                    <a href="#"><p>Hệ Thống Cửa Hàng</p></a>
+                    <a href="#"><p>Tin Tức</p></a>
+                    <a href="#"><p>Hàng Khuyến Mãi</p></a>
                 </div>
                 <div class="footer-right">
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
-                    <a href="#"><p>item 1</p></a>
+                    <a href="#"><p>Hướng Dẫn Thanh Toán</p></a>
+                    <a href="#"><p>Chính Sách giao nhận - Vận chuyển</p></a>
+                    <a href="#"><p>Tra cứu đơn hàng</p></a>
+                    <a href="#"><p>Quy định đổi hàng</p></a>
+                    <a href="#"><p>Quy định bảo hành và sửa chữa</p></a>
                 </div>
             </div>
             <div class="footer-flex">
-                <p>Copyright © Your Website 2023</p>
-                <p class="power">Power py ...</p>
+                <p>Copyright © Shop Fashion 2023</p>
+                <p class="power">Power by Teams Shop Fashion</p>
                 <div class="footer-rights">
                     <p>Hãy kết nối với chúng tôi</p>
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -327,6 +345,13 @@
     <div title="Về đầu trang" id="top-up">
         <i class="fas fa-arrow-circle-up"></i>
     </div>
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiprer.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/top.js"></script>
     <script src="./js/listpage.js"></script>

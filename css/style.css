@@ -299,7 +299,7 @@ header .search-form label:hover {
 /* --------- contact --------- */
 .container .contact {
     text-align: center;
-    margin: 8rem;
+    margin: 15rem 0;
 }
 .container .contact .contact-des p {
     font-size: 2rem;
@@ -482,7 +482,21 @@ header .dn .close:hover {
 .cart.active {
     left: calc(100% - 400px);
 }
-
+.image {
+    width: 303px;
+    height: 430px;
+    object-fit: cover;
+}
+.hinh-anh {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+.img-news {
+    width: 782px;
+    height: 521px;
+    object-fit: cover;
+}
 /* preloader */
 #preloader{
 	background-color: #171D22;

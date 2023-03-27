@@ -19,6 +19,12 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
 }
+body {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de70e32a-639d-4aec-9894-c001c53e9875/da5t6xa-a95a8639-343f-4b08-9e04-8281815d1153.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RlNzBlMzJhLTYzOWQtNGFlYy05ODk0LWMwMDFjNTNlOTg3NVwvZGE1dDZ4YS1hOTVhODYzOS0zNDNmLTRiMDgtOWUwNC04MjgxODE1ZDExNTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WOrTodkqXoetfQYO8YhhmgGPO3_iDgzLEW6dXrDNb1c');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 /* -------- header -------- */
 .navbar-about-us {
     width: 100%;
@@ -172,6 +178,7 @@ header .search-form label:hover {
 .container .container-fluid .container-left .cartegory {
     font-size: 3rem;
     border-bottom: .3rem solid transparent;
+    color: #fff;
 }
 .container .container-fluid .container-left .cartegory:hover {
     border-bottom: .3rem solid #000;
@@ -208,8 +215,12 @@ header .search-form label:hover {
 }
 .container .row .col-md-3 .card-body .title {
     font-weight: bold;
-    color: #000;
+    color: #fff;
     font-size: 1.8rem;
+}
+.container .row .col-md-3 .card-body .price,
+.container .row .col-md-3 .card-body .description {
+    color:#fff;
 }
 .container .row .col-md-3 .card-body .title:hover {
     color: #ff0000;
@@ -222,7 +233,7 @@ header .search-form label:hover {
     padding: 8px 16px;
     outline: none;
     border: 1px solid #000;
-    background-color: transparent;
+    background-color: #fff;
     overflow: hidden;
     transition: color 0.4s ease-in-out;
     margin-bottom: 15px;
@@ -282,6 +293,7 @@ header .search-form label:hover {
 .container .container-content-2 .sanphamhot {
     font-size: 3rem;
     border-bottom: .3rem solid transparent;
+    color: #fff;
 }
 .container .container-content-2 .sanphamhot:hover {
     border-bottom: .3rem solid #000;
@@ -290,11 +302,14 @@ header .search-form label:hover {
 .container .row-2 .col-sm-3 .card-body a {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #000;
+    color: #fff;
 }
 .container .row-2 .col-sm-3 .card-body a:hover {
     color: #ff0000;
     transition: all .3s ease-in-out;
+}
+.container .row-2 .col-sm-3 .card-body .start {
+    color: #fff;
 }
 /* --------- contact --------- */
 .container .contact {
@@ -306,11 +321,17 @@ header .search-form label:hover {
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-weight: 500;
+    color: #fff;
 }
 .container .contact .contact-input .form-email {
     border-bottom: .1rem solid #000;
     padding: 1.5rem 2.5rem;
     text-align: center;
+    background: transparent;
+    color: #fff;
+}
+.contact-input :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
 }
 .container .contact .contact-input .btn-submit {
     padding: .5rem 3rem;

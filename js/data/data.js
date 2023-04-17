@@ -83,3 +83,6 @@ data_3.forEach((value, key) => {
     `
 });
 document.querySelector('.row-2').innerHTML = product_3;
+
+// data new
+

@@ -1,4 +1,4 @@
-.category {
+.category, .category-2 {
     display: grid;
     column-gap: 2rem;
     grid-template-columns: auto auto auto auto;
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 768px) {
-    .category {
+    .category, .category-2 {
         grid-template-columns: auto auto;
     }
 }

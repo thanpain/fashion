@@ -1,6 +1,6 @@
 let thisPage = 1;
 let limit = 4;
-let list = document.querySelectorAll('.container .row .col-md-3');
+let list = document.querySelectorAll('.container .row-1 .col-md-3');
 
 function loadItem() {
     let beinGet = limit * (thisPage - 1);

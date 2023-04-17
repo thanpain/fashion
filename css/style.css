@@ -198,35 +198,36 @@ header .search-form label:hover {
     color: #ff0000;
     transition: all .3s ease-in-out;
 }
-.container .row {
+
+.container .row-1, .row-3 {
     display: grid;
     column-gap: 2rem;
     grid-template-columns: auto auto auto auto;
     padding: 0 1rem;
 }
-.container .row .col-md-3 .card-body {
+.container .col-md-3 .card-body {
     padding: 1.5rem 0;
     font-size: 1.5rem;
 }
-.container .row .col-md-3:hover img {
+.container .col-md-3:hover img {
     transform: translate(0, -25px);
     transition: all .5s;
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 60%), 0 4px 20px 0 rgb(0 0 0 / 49%);
 }
-.container .row .col-md-3 .card-body .title {
+.container .col-md-3 .card-body .title {
     font-weight: bold;
     color: #fff;
     font-size: 1.8rem;
 }
-.container .row .col-md-3 .card-body .price,
-.container .row .col-md-3 .card-body .description {
+.container .col-md-3 .card-body .price,
+.container .col-md-3 .card-body .description {
     color:#fff;
 }
-.container .row .col-md-3 .card-body .title:hover {
+.container .col-md-3 .card-body .title:hover {
     color: #ff0000;
     transition: all .3s ease-in-out;
 }
-.container .row .col-md-3 .card-footer .buy {
+.container .col-md-3 .card-footer .buy {
     z-index: 1;
     position: relative;
     color: #000;
@@ -238,7 +239,7 @@ header .search-form label:hover {
     transition: color 0.4s ease-in-out;
     margin-bottom: 15px;
 }
-.container .row .col-md-3 .card-footer .buy::before {
+.container .col-md-3 .card-footer .buy::before {
     content: '';
     z-index: -1;
     position: absolute;
@@ -252,11 +253,11 @@ header .search-form label:hover {
     transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
     transition: transform 0.45s ease-in-out;
 }
-.container .row .col-md-3 .card-footer .buy:hover {
+.container .col-md-3 .card-footer .buy:hover {
     cursor: pointer;
     color: #fff;
 }
-.container .row .col-md-3 .card-footer .buy:hover::before {
+.container .col-md-3 .card-footer .buy:hover::before {
     transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
 }
 .container .listpage {
@@ -407,23 +408,21 @@ header .dn {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    background: #000;
-    visibility: hidden;
+    background: #ddd;
+    display: none;
 }
-header .dn.active {
-    visibility: visible;
-}
+
 header .dn .form-dn {
     position: relative;
 }
 header .dn .form-dn h2 {
-    color: #fff;
+    color: #000;
     font-size: 5rem;
     margin-bottom: 3rem;
 }
 header .dn .form-dn label {
     font-size: 2rem;
-    color: #fff;
+    color: #000;
     margin: 0 1rem;
 }
 header .dn .form-dn .login, .password {
@@ -431,13 +430,15 @@ header .dn .form-dn .login, .password {
     padding: 1rem 1rem;
     border-radius: 999px;
     margin: 1.5rem 0;
+    border: .1rem solid #000;
 }
 header .dn .form-dn .btn-dangnhap {
     padding: 1.5rem 2rem;
     cursor: pointer;
     margin: 3rem 1rem;
     border-radius: 999px;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 header .dn .form-dn .btn-dangnhap:hover {
     background-color: #ffff00;
@@ -445,7 +446,7 @@ header .dn .form-dn .btn-dangnhap:hover {
     transition: .3s;
 }
 header .dn .close {
-    color: #fff;
+    color: #000;
     font-size: 3rem;
     position: absolute;
     right: 1rem;

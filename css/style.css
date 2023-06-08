@@ -19,12 +19,6 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
 }
-body {
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de70e32a-639d-4aec-9894-c001c53e9875/da5t6xa-a95a8639-343f-4b08-9e04-8281815d1153.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RlNzBlMzJhLTYzOWQtNGFlYy05ODk0LWMwMDFjNTNlOTg3NVwvZGE1dDZ4YS1hOTVhODYzOS0zNDNmLTRiMDgtOWUwNC04MjgxODE1ZDExNTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WOrTodkqXoetfQYO8YhhmgGPO3_iDgzLEW6dXrDNb1c');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
 /* -------- header -------- */
 .navbar-about-us {
     width: 100%;
